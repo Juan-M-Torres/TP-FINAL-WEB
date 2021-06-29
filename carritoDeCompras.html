@@ -35,53 +35,57 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>Prenda</th>
-                            <th>Precio</th>
+                            <th>prenda</th>
+                            <th>precio</th>
+                            <th>Borrar</th>
+                            <th>Editar</th>
                         </tr>
                     </thead>
-                    <tbody id="tbody">
-
-                    </tbody>
+                    <tbody id="tbody"></tbody>
                 </table>
             </div>
             <div class="contenedor-input-btones">
                 <form>
                     <div class="input-tabla">
-                        <input type="text" placeholder="Ingrese prenda" id="ingresoPrenda">
-                        <input type="number" placeholder="Ingrese precio" id="ingresoPrecio">
+                        <input type="text" id="prenda" placeholder="Ingrese Prenda" required>
+                        <input type="number" id="precio" placeholder="Ingrese Precio" required>
                     </div>
                     <div class="btnes-tabla">
-                        <input type="button" value="agregar" id="boton-agregar">
-                        <input type="button" value="vaciar tabla" id="boton-vaciar">
-                        <input type="button" value="agregar x 3" id="boton-agregarX3">
+
+                        <input type="button" id="agregar" value="agregar">
+                        <input type="button" id="agregarX3" value="agregar 3 veces">
                     </div>
-                    <p>Compras superiores a $5.999, tienen 15% de descuento.</p>
+                    <div>
+                        <input type="text" id="input-filtro" placeholder="Ingrese Prenda a filtrar" required>
+                        <input type="button" value="filtrar" id="filtro-tabla">
+                        <input type="button" value="mostrar tabla completa" id="desfiltrar-tabla">
+                    </div>
                 </form>
             </div>
         </div>
 
     </section>
 
-    <footer>
-        <div class="pie-de-pagina">
-            <div class="redes-sociales">
-                <h4>REDES SOCIALES</h4>
-                <a href="http://facebook.com"><img class="imgpiepagina" src="img/logofacebook.png" alt="Logo Facebook"></a>
-                <a href="http://instragram.com"><img class="imgpiepagina" src="img/logoinstagram.png" alt="Logo instagam"></a>
-                <a href="http://twitter.com"><img class="imgpiepagina" src="img/logotwitter.jpg" alt="Logo Twitter"></a>
-            </div>
-            <div class="metodo-envio">
-                <h4>MEDIOS DE ENVIO</h4>
-                <img class="imgpiepagina" src="img/logocorreoargentino.jpg" alt="Logo Correo Argentino">
-                <img class="imgpiepagina" src="img/logodhl.png" alt="Logo DHL">
-                <img class="imgpiepagina" src="img/logooca.jpg" alt="Logo Oca">
-            </div>
-            <div class="metodo-pago">
-                <h4>MEDIOS DE PAGO</h4>
-                <img class="imgpiepagina" src="img/logoamericanexpress.jpg" alt="Logo tarjeta American Express">
-                <img class="imgpiepagina" src="img/logomastercar.jpg" alt="Logo tarjeta Mastercard">
-                <img class="imgpiepagina" src="img/logovisa.jpg" alt="Logo tarjeta Visa">
-            </div>
+    <footer class="pie-de-pagina">
+
+        <div class="redes-sociales">
+            <h4>REDES SOCIALES</h4>
+            <a href="http://facebook.com"><img class="imgpiepagina" src="img/logofacebook.png" alt="Logo Facebook"></a>
+            <a href="http://instragram.com"><img class="imgpiepagina" src="img/logoinstagram.png" alt="Logo instagam"></a>
+            <a href="http://twitter.com"><img class="imgpiepagina" src="img/logotwitter.jpg" alt="Logo Twitter"></a>
+        </div>
+        <div class="metodo-envio">
+            <h4>MEDIOS DE ENVIO</h4>
+            <img class="imgpiepagina" src="img/logocorreoargentino.jpg" alt="Logo Correo Argentino">
+            <img class="imgpiepagina" src="img/logodhl.png" alt="Logo DHL">
+            <img class="imgpiepagina" src="img/logooca.jpg" alt="Logo Oca">
+        </div>
+        <div class="metodo-pago">
+            <h4>MEDIOS DE PAGO</h4>
+            <img class="imgpiepagina" src="img/logoamericanexpress.jpg" alt="Logo tarjeta American Express">
+            <img class="imgpiepagina" src="img/logomastercar.jpg" alt="Logo tarjeta Mastercard">
+            <img class="imgpiepagina" src="img/logovisa.jpg" alt="Logo tarjeta Visa">
+        </div>
     </footer>
 
 </body>

@@ -1,3 +1,7 @@
+.inputOculto {
+    display: none;
+}
+
 .logo,
 .subtitulo,
 .showmenu {
