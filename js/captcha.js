@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let numeroCaptcha = document.getElementById("numero"); // h3
     let ingreso = document.getElementById("ingreso"); // lo que va a ingresar el usuario
-    numeroCaptcha.innerHTML = createRandom(); /*llamo a la funcion para que me de un numero*/
+    numeroCaptcha.innerHTML = createRandom(); //llamo a la funcion para que me de un numero
     let resultado = document.getElementById("resultado"); //El resultado del captcha se muestra aca 
 
     function verificarCaptcha() {

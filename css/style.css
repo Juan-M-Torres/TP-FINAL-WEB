@@ -1,6 +1,4 @@
-.inputOculto {
-    display: none;
-}
+/*Index*/
 
 .logo,
 .subtitulo,
@@ -10,7 +8,7 @@
     background-color: gray;
 }
 
-#showmenu {
+.showmenu {
     text-align: left;
     font-size: 17px;
 }
@@ -29,6 +27,19 @@
     display: flex;
     flex-direction: column;
 }
+
+.colum-0,
+.colum-2,
+.inputOculto {
+    display: none;
+}
+
+.colum-1 {
+    text-align: justify;
+}
+
+
+/*Ropa*/
 
 .box-lista {
     list-style: none;
@@ -51,27 +62,6 @@
     text-decoration: underline;
 }
 
-.colum-0,
-.colum-2 {
-    display: none;
-}
-
-.colum-1 {
-    text-align: justify;
-}
-
-.imgpiepagina {
-    height: 25px;
-    width: 25px;
-}
-
-.pie-de-pagina {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    background-color: gray;
-}
-
 .imgcatalogo {
     width: 200px;
     height: 200px;
@@ -90,12 +80,9 @@
     margin-bottom: 20px;
 }
 
-.formularios {
+article div form {
     margin-bottom: 5px;
 }
-
-
-/*Tabla*/
 
 thead {
     background-color: lightblue;
@@ -110,18 +97,10 @@ tr {
     text-align: center;
 }
 
-.promocion {
-    background-color: #FDFD96;
-}
-
-.btnes-tabla {
+.btnes-tabla,
+.btnes-filtroTabla {
     display: flex;
-    margin-left: 45px;
-    padding-top: 5px;
-}
-
-.tabla-compras {
-    margin-left: 70px;
+    justify-content: center;
 }
 
 .contenedor-input-btones {
@@ -139,6 +118,25 @@ tr {
     padding-left: 20px;
 }
 
+.seccion-filtro {
+    margin-top: 20px;
+}
+
+
+/*Pie de pagina*/
+
+.imgpiepagina {
+    height: 25px;
+    width: 25px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: gray;
+}
+
 @media only screen and (min-width: 600px) {
     .showmenu,
     .volver-al-inicio,
@@ -148,6 +146,7 @@ tr {
     .shorts {
         display: none;
     }
+    /*Index*/
     .colum-0,
     .colum-1,
     .colum-2 {
@@ -178,6 +177,7 @@ tr {
         list-style: none;
         padding: 0px;
     }
+    /*Ropa*/
     .catalogo-lista {
         display: flex;
         justify-content: space-around;
@@ -200,15 +200,13 @@ tr {
         justify-content: space-between;
         margin: 20px;
     }
+    /*Contacto*/
     .form-y-captcha {
         justify-content: center;
         margin-left: 30%;
         margin-right: 30%;
     }
-    .bloque-compras-inputs {
-        display: flex;
-        justify-content: space-evenly;
-    }
+    /*Carrito de compras*/
     thead,
     table,
     th,
@@ -216,5 +214,9 @@ tr {
     tr {
         font-size: 25px;
         margin-bottom: 60px;
+    }
+    .bloque-tabla {
+        display: flex;
+        justify-content: space-evenly;
     }
 }
